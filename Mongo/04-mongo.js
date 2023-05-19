@@ -1,0 +1,89 @@
+db.dept.aggregate([
+    {
+        $lookup:{
+            from:'emp',
+            localField:'_id',
+            foreignField:'deptno',
+            as:'empList'
+        }
+    },
+    {$out:'deptemps'}
+])
+db.dept.aggregate([
+    {
+        $lookup:{
+            from:'emp',
+            localField:'_id',
+            foreignField:'deptno',
+            as:'empList'
+        }
+    },
+    {$merge:'deptemps'}
+])
+db.deptemps.aggregate([
+    {
+        $unwind: '$empList'
+    }
+])
+db.deptemps.aggregate([
+    {
+        $unwind: '$empList'
+    },
+    {
+        $addFields: {
+            empName:'$empList.ename'
+        }
+    },
+    {
+        $project:{
+            dname:1,
+            empName:1
+        }
+    }
+])
+db.contact.insertMany(
+    [
+        {
+            _id:1,
+            name:'vefd',
+            age:28
+        },
+        {
+            _id:2,
+            name:'vefd',
+            age:28
+        },
+    ]
+)
+db.contact.updateOne({_id:1},{$inc:{'age':1}})
+db.contact.updateMany({name:'vefd'},{$inc:{'age':-5}})
+db.contact.updateMany({name:'vefd'},{$set:{mo:187}})
+db.students.deleteMany({_id:{$nin:[1,2,3]}})
+
+db.students.updateOne(
+    {name:'Sachin'},
+    {$push:{hobbies:'Cooking'}}
+)
+db.students.updateOne(
+    {name:'Sameer'},
+    {$pop:{hobbies:-1}}
+)
+db.students.updateOne(
+    {name:'Sameer'},
+    {$addToSet:{hobbies:'ccsd'}}
+)
+db.students.updateOne(
+    {name:'Dinesh'},
+    {$pull:{hobbies:'Music'}}
+)
+db.students.updateOne(
+    {name:'Sachin'},
+    {$addToSet:{
+        hobbies:{
+            $each:['vfev','dce','Cooking']
+        }
+    }}
+)
+db.students.updateOne(
+    {}
+)
