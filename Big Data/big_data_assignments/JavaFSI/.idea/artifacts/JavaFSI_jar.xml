@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="JavaFSI_jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/JavaFSI_jar</output-path>
-    <root id="archive" name="JavaFSI.jar">
-      <element id="module-output" name="JavaFSI" />
-    </root>
-  </artifact>
-</component>
