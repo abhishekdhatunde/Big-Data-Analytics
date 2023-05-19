@@ -1,0 +1,208 @@
+👉️Q1.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -l
+total 40
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Desktop
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  5 16:59 Documents
+drwxr-xr-x 3 abhishek abhishek 4096 Dec  5 15:18 Downloads
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Music
+drwxrwxr-x 3 abhishek abhishek 4096 Dec  5 16:50 one
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Pictures
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Public
+drwx------ 4 abhishek abhishek 4096 Dec  5  2022 snap
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Templates
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Videos
+
+👉️Q2.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -S
+Desktop    Downloads  one       Public  Templates
+Documents  Music      Pictures  snap    Videos
+
+👉️Q3.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -i
+4983149 Desktop    4983155 Music     4983153 Public     4983157 Videos
+4983154 Documents  4983132 one       5373999 snap
+4983151 Downloads  4983156 Pictures  4983152 Templates
+
+👉️Q4.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -R
+.:
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+
+./Desktop:
+
+./Documents:
+ Assignment1.txt  'DBDA_SCHOOL_TG_Linux (1).pdf'   linux.txt
+
+./Downloads:
+firefox.tmp
+
+./Downloads/firefox.tmp:
+tmpaddon
+
+./Music:
+
+./Pictures:
+Screenshots
+
+./Pictures/Screenshots:
+'Screenshot from 2022-12-06 09-47-24.png'
+'Screenshot from 2022-12-06 11-17-38.png'
+
+./Public:
+
+./snap:
+firefox  snapd-desktop-integration
+
+./snap/firefox:
+1232  2154  common  current
+
+./snap/firefox/1232:
+
+./snap/firefox/2154:
+
+./snap/firefox/common:
+
+./snap/snapd-desktop-integration:
+10  43  common  current
+
+./snap/snapd-desktop-integration/10:
+
+./snap/snapd-desktop-integration/43:
+
+./snap/snapd-desktop-integration/common:
+
+./Templates:
+
+./Videos:
+
+👉️Q5.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ touch name.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+Desktop    Downloads  name.txt  Public  Templates
+Documents  Music      Pictures  snap    Videos
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cat > name.txt
+DHATUNDE ABHISHEKabhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cat name.txt
+DHATUNDE ABHISHEK
+
+👉️Q6.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+Desktop    Downloads  name.txt  Public  Templates
+Documents  Music      Pictures  snap    Videos
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -l name.txt
+-rw-rw-r-- 1 abhishek abhishek 17 Dec  6 14:30 name.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ touch -m name.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -l name.txt
+-rw-rw-r-- 1 abhishek abhishek 17 Dec  6 14:36 name.txt
+
+
+👉️Q7.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ mkdir one
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cd one
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ touch 1.txt 11.txt 111.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ mkdir two
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cd two
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ touch 2.txt 22.txt 222.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ mkdir three
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ cd three
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ touch 3.txt 33.txt 333.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ mkdir four
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ cd four
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ touch 4.txt 44.txt 444.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ mkdir five
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ cd five
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ cd ~
+
+
+👉️Q8.
+1] abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls one/two/three/four/five
+   555.txt  55.txt  5.txt
+   
+2] abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls one/two/three/four
+   444.txt  44.txt  4.txt  five
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cat > 44.txt
+   ABHISHEK
+
+3]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cd one
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cd two/three/four/five
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ ls
+  555.txt  55.txt  5.txt
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ rm -r 555.txt
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ ls
+  55.txt  5.txt
+  
+4]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cd one/two/three/four/five
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ ls
+  55.txt  5.txt
+  
+5]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cd one/two/three
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ ls
+  333.txt  33.txt  3.txt  four
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ cat > 3.txt
+  PG-DBDA
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ cat 3.txt
+  PG-DBDA
+  
+6]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ ls
+  55.txt  5.txt
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four/five$ cd ..
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ cd ..
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ cd ..
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ ls
+  222.txt  22.txt  2.txt  three
+  
+7]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ ls
+  222.txt  22.txt  2.txt  three
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ rm -r 222.txt
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ ls
+  22.txt  2.txt  three
+
+8]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ ls
+  22.txt  2.txt  three
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ cd ..
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one
+
+9]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cd two/three/four
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ ls
+  444.txt  44.txt  4.txt  five
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ rm -r five
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ ls
+  444.txt  44.txt  4.txt
+
+10]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cd two/three/four
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ ls
+   444.txt  44.txt  4.txt  five
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ rm -r five
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ ls
+   444.txt  44.txt  4.txt
+   
+11]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cd two/three/four
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ ls
+   444.txt  44.txt  4.txt
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ rm -r 
+   444.txt    44.txt 4.txt
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ ls
+
+12]abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ ls
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three/four$ cd ..
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ cd ..
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two$ cd ..
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cd ..
+   abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+   44.txt   Documents  Music     one       Public  Templates
+   Desktop  Downloads  name.txt  Pictures  snap    Videos
+
+👉️Q9.
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cd one/two/three
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ ls
+  333.txt  33.txt  3.txt  four
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ ls -l  3.txt
+  -rw-rw-r-- 1 abhishek abhishek 7 Dec  6 14:52 3.txt
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ touch -m 3.txt
+  abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one/two/three$ ls -l 3.txt
+  -rw-rw-r-- 1 abhishek abhishek 7 Dec  6 15:15 3.txt
+
+
+
+
+

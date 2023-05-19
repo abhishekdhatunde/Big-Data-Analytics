@@ -1,0 +1,487 @@
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ man
+What manual page do you want?
+For example, try 'man man'.
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ uname
+Linux
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ pwd
+/home/abhishek
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ hostname
+abhishek-Lenovo-IdeaPad-L340-15IWL
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ date
+Tuesday 06 December 2022 03:31:02 PM IST
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cal
+   December 2022      
+Su Mo Tu We Th Fr Sa  
+             1  2  3  
+ 4  5  6  7  8  9 10  
+11 12 13 14 15 16 17  
+18 19 20 21 22 23 24  
+25 26 27 28 29 30 31  
+                      
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+44.txt   Documents  Music     one       Public  Templates
+Desktop  Downloads  name.txt  Pictures  snap    Videos
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cat name.txt
+DHATUNDE ABHISHEKabhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cat >> name.txt
+--> PG -DBDAabhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cp name.txt name1.txt
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+44.txt   Documents  Music      name.txt  Pictures  snap       Videos
+Desktop  Downloads  name1.txt  one       Public    Templates
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ mv name1.txt one/
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cd one
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ls
+111.txt  11.txt  1.txt  name1.txt  two
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ mv name1.txt uname.txt
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ls
+111.txt  11.txt  1.txt  two  uname.txt
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cat > 1.txt
+2
+5
+8
+9
+6
+47
+556
+5
+8
+9
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ tac 1.txt
+9
+8
+5
+556
+47
+6
+9
+8
+5
+2
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ rev 1.txt
+2
+5
+8
+9
+6
+74
+655
+5
+8
+9
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ wc < 1.txt
+10 10 23
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ mkdir new.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ cd ..
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+44.txt   Documents  Music     one       Public  Templates
+Desktop  Downloads  name.txt  Pictures  snap    Videos
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ cd one
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ls
+111.txt  11.txt  1.txt  new.txt  two  uname.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ rm -r uname.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ls
+111.txt  11.txt  1.txt  new.txt  two
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ rmdir new.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ touch alpha.txt beta.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ sort 1.txt
+2
+47
+5
+5
+556
+6
+8
+8
+9
+9
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ uniq 1.txt
+2
+5
+8
+9
+6
+47
+556
+5
+8
+9
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ head 1.txt
+2
+5
+8
+9
+6
+47
+556
+5
+8
+9
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ tail 1.txt
+2
+5
+8
+9
+6
+47
+556
+5
+8
+9
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ factor 20
+20: 2 2 5
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ alias list=ls
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ list
+111.txt  11.txt  1.txt  alpha.txt  beta.txt  two
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ unalias list
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ 
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ alias list=ls
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ list
+111.txt  11.txt  1.txt  alpha.txt  beta.txt  two
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ unalias list
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ echo
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ echo $SHELL
+/bin/bash
+
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ps
+    PID TTY          TIME CMD
+   5610 pts/0    00:00:00 bash
+   6777 pts/0    00:00:00 ps
+   
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:02 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      6 ?        00:00:00 kworker/0:0H-events_highpri
+      7 ?        00:00:01 kworker/0:1-inet_frag_wq
+      9 ?        00:00:00 mm_percpu_wq
+     10 ?        00:00:00 rcu_tasks_rude_
+     11 ?        00:00:00 rcu_tasks_trace
+     12 ?        00:00:00 ksoftirqd/0
+     13 ?        00:00:07 rcu_sched
+     14 ?        00:00:00 migration/0
+     15 ?        00:00:00 idle_inject/0
+     16 ?        00:00:00 cpuhp/0
+     17 ?        00:00:00 cpuhp/1
+     18 ?        00:00:00 idle_inject/1
+     19 ?        00:00:00 migration/1
+     20 ?        00:00:00 ksoftirqd/1
+     22 ?        00:00:00 kworker/1:0H-events_highpri
+     23 ?        00:00:00 cpuhp/2
+     24 ?        00:00:00 idle_inject/2
+     25 ?        00:00:00 migration/2
+     26 ?        00:00:00 ksoftirqd/2
+     28 ?        00:00:00 kworker/2:0H-events_highpri
+     29 ?        00:00:00 cpuhp/3
+     30 ?        00:00:00 idle_inject/3
+     31 ?        00:00:00 migration/3
+     32 ?        00:00:00 ksoftirqd/3
+     34 ?        00:00:00 kworker/3:0H-events_highpri
+     35 ?        00:00:00 cpuhp/4
+     36 ?        00:00:00 idle_inject/4
+     37 ?        00:00:00 migration/4
+     38 ?        00:00:00 ksoftirqd/4
+     40 ?        00:00:00 kworker/4:0H-kblockd
+     41 ?        00:00:00 cpuhp/5
+     42 ?        00:00:00 idle_inject/5
+     43 ?        00:00:00 migration/5
+     44 ?        00:00:00 ksoftirqd/5
+     46 ?        00:00:00 kworker/5:0H-events_highpri
+     47 ?        00:00:00 cpuhp/6
+     48 ?        00:00:00 idle_inject/6
+     49 ?        00:00:00 migration/6
+     50 ?        00:00:22 ksoftirqd/6
+     52 ?        00:00:00 kworker/6:0H-kblockd
+     53 ?        00:00:00 cpuhp/7
+     54 ?        00:00:00 idle_inject/7
+     55 ?        00:00:00 migration/7
+     56 ?        00:00:00 ksoftirqd/7
+     58 ?        00:00:00 kworker/7:0H-events_highpri
+     59 ?        00:00:00 kdevtmpfs
+     60 ?        00:00:00 netns
+     61 ?        00:00:00 inet_frag_wq
+     62 ?        00:00:00 kauditd
+     63 ?        00:00:00 khungtaskd
+     64 ?        00:00:00 oom_reaper
+     65 ?        00:00:00 writeback
+     66 ?        00:00:00 kcompactd0
+     67 ?        00:00:00 ksmd
+     68 ?        00:00:00 khugepaged
+     75 ?        00:00:00 kworker/2:1-events
+    116 ?        00:00:00 kintegrityd
+    117 ?        00:00:00 kblockd
+    118 ?        00:00:00 blkcg_punt_bio
+    119 ?        00:00:00 tpm_dev_wq
+    120 ?        00:00:00 ata_sff
+    121 ?        00:00:00 md
+    122 ?        00:00:00 edac-poller
+    123 ?        00:00:00 devfreq_wq
+    124 ?        00:00:00 watchdogd
+    127 ?        00:00:00 kworker/0:1H-events_highpri
+    129 ?        00:00:00 kswapd0
+    130 ?        00:00:00 ecryptfs-kthrea
+    132 ?        00:00:00 kthrotld
+    133 ?        00:00:00 kworker/1:1-events
+    137 ?        00:00:00 acpi_thermal_pm
+    140 ?        00:00:00 vfio-irqfd-clea
+    141 ?        00:00:00 mld
+    142 ?        00:00:00 ipv6_addrconf
+    151 ?        00:00:00 kstrp
+    154 ?        00:00:00 zswap-shrink
+    155 ?        00:00:20 kworker/u17:0-i915_flip
+    162 ?        00:00:00 charger_manager
+    184 ?        00:00:00 kworker/7:1H-events_highpri
+    219 ?        00:00:00 kworker/3:1H-kblockd
+    221 ?        00:00:00 nvme-wq
+    222 ?        00:00:00 nvme-reset-wq
+    223 ?        00:00:00 nvme-delete-wq
+    227 ?        00:00:00 scsi_eh_0
+    228 ?        00:00:00 scsi_tmf_0
+    229 ?        00:00:00 scsi_eh_1
+    230 ?        00:00:00 scsi_tmf_1
+    233 ?        00:00:00 kworker/1:1H-events_highpri
+    235 ?        00:00:00 kworker/6:1H-kblockd
+    238 ?        00:00:00 kworker/5:1H-kblockd
+    240 ?        00:00:00 kworker/2:1H-events_highpri
+    242 ?        00:00:00 kworker/4:1H-kblockd
+    264 ?        00:00:00 jbd2/sda7-8
+    265 ?        00:00:00 ext4-rsv-conver
+    305 ?        00:00:00 systemd-journal
+    330 ?        00:00:00 kworker/3:2-events
+    332 ?        00:00:00 ipmi-msghandler
+    359 ?        00:00:01 systemd-udevd
+    398 ?        00:00:00 irq/110-ELAN062
+    418 ?        00:00:00 irq/137-mei_me
+    435 ?        00:00:00 cryptd
+    489 ?        00:00:00 cfg80211
+    549 ?        00:00:01 kworker/5:3-events
+    550 ?        00:00:00 kworker/u17:1-hci0
+    557 ?        00:00:00 ath10k_wq
+    558 ?        00:00:00 ath10k_aux_wq
+    559 ?        00:00:00 ath10k_tx_compl
+    568 ?        00:00:00 card0-crtc0
+    569 ?        00:00:00 card0-crtc1
+    570 ?        00:00:00 card0-crtc2
+    669 ?        00:00:09 systemd-oomd
+    670 ?        00:00:00 systemd-resolve
+    671 ?        00:00:00 systemd-timesyn
+    709 ?        00:00:00 accounts-daemon
+    710 ?        00:00:00 acpid
+    712 ?        00:00:00 avahi-daemon
+    713 ?        00:00:00 bluetoothd
+    714 ?        00:00:00 cron
+    715 ?        00:00:02 dbus-daemon
+    716 ?        00:00:01 NetworkManager
+    739 ?        00:00:00 irqbalance
+    740 ?        00:00:00 networkd-dispat
+    741 ?        00:00:01 polkitd
+    742 ?        00:00:00 power-profiles-
+    743 ?        00:00:00 rsyslogd
+    749 ?        00:00:04 snapd
+    750 ?        00:00:00 switcheroo-cont
+    751 ?        00:00:00 systemd-logind
+    752 ?        00:00:00 thermald
+    753 ?        00:00:01 udisksd
+    754 ?        00:00:00 wpa_supplicant
+    760 ?        00:00:00 avahi-daemon
+    816 ?        00:00:00 ModemManager
+    825 ?        00:00:00 cupsd
+    828 ?        00:00:00 unattended-upgr
+    856 ?        00:00:00 upowerd
+    865 ?        00:00:00 gdm3
+    939 ?        00:00:00 rtkit-daemon
+    995 ?        00:00:00 cups-browsed
+   1011 ?        00:00:00 kerneloops
+   1013 ?        00:00:00 kerneloops
+   1316 ?        00:00:00 packagekitd
+   1579 ?        00:00:00 colord
+   1635 ?        00:00:00 gdm-session-wor
+   1669 ?        00:00:00 systemd
+   1670 ?        00:00:00 (sd-pam)
+   1676 ?        00:00:00 pipewire
+   1677 ?        00:00:00 pipewire-media-
+   1678 ?        00:00:00 pulseaudio
+   1679 ?        00:00:01 snapd-desktop-i
+   1689 ?        00:00:01 dbus-daemon
+   1696 ?        00:00:00 gvfsd
+   1708 ?        00:00:00 gvfsd-fuse
+   1720 ?        00:00:00 xdg-document-po
+   1724 ?        00:00:00 xdg-permission-
+   1730 ?        00:00:00 fusermount3
+   1741 ?        00:00:00 gnome-keyring-d
+   1778 ?        00:00:02 tracker-miner-f
+   1783 tty2     00:00:00 gdm-wayland-ses
+   1786 tty2     00:00:00 gnome-session-b
+   1807 ?        00:00:00 krfcommd
+   1868 ?        00:00:00 gnome-remote-de
+   1870 ?        00:00:00 gnome-session-c
+   1883 ?        00:00:00 gnome-session-b
+   1920 ?        00:00:00 at-spi-bus-laun
+   1922 ?        00:06:55 gnome-shell
+   1929 ?        00:00:00 dbus-daemon
+   1948 ?        00:00:00 gvfs-udisks2-vo
+   1953 ?        00:00:00 gvfs-goa-volume
+   1957 ?        00:00:00 goa-daemon
+   1968 ?        00:00:00 goa-identity-se
+   1970 ?        00:00:00 gvfs-mtp-volume
+   1977 ?        00:00:00 gvfs-gphoto2-vo
+   1982 ?        00:00:00 gvfs-afc-volume
+   2017 ?        00:00:00 gnome-shell-cal
+   2063 ?        00:00:00 gvfsd-trash
+   2067 ?        00:00:00 evolution-sourc
+   2074 ?        00:00:00 gjs
+   2076 ?        00:00:00 at-spi2-registr
+   2094 ?        00:00:00 sh
+   2095 ?        00:00:00 gsd-a11y-settin
+   2097 ?        00:00:21 ibus-daemon
+   2098 ?        00:00:00 gsd-color
+   2100 ?        00:00:00 gsd-datetime
+   2101 ?        00:00:00 gsd-housekeepin
+   2106 ?        00:00:00 gsd-keyboard
+   2110 ?        00:00:00 gsd-media-keys
+   2111 ?        00:00:00 gsd-power
+   2112 ?        00:00:00 gsd-print-notif
+   2113 ?        00:00:00 gsd-rfkill
+   2114 ?        00:00:00 gsd-screensaver
+   2118 ?        00:00:00 gsd-sharing
+   2122 ?        00:00:00 gsd-smartcard
+   2124 ?        00:00:00 gsd-sound
+   2125 ?        00:00:00 gsd-wacom
+   2164 ?        00:00:00 evolution-alarm
+   2173 ?        00:00:00 gsd-disk-utilit
+   2200 ?        00:00:00 ibus-dconf
+   2201 ?        00:00:05 ibus-extension-
+   2224 ?        00:00:00 gsd-printer
+   2238 ?        00:00:00 ibus-portal
+   2296 ?        00:00:06 ibus-engine-sim
+   2298 ?        00:00:00 gjs
+   2325 ?        00:00:04 gjs
+   2341 ?        00:00:00 xdg-desktop-por
+   2350 ?        00:00:01 xdg-desktop-por
+   2353 ?        00:00:00 evolution-calen
+   2442 ?        00:00:00 dconf-service
+   2448 ?        00:00:00 evolution-addre
+   2471 ?        00:00:00 xdg-desktop-por
+   2549 ?        00:00:00 gvfsd-metadata
+   2674 ?        00:00:00 mount.ntfs
+   2708 ?        00:00:00 mount.ntfs
+   2732 ?        00:00:00 update-notifier
+   3128 ?        00:00:00 mount.ntfs
+   4018 ?        00:00:10 Xwayland
+   4037 ?        00:00:00 gsd-xsettings
+   4069 ?        00:00:00 ibus-x11
+   4219 ?        00:00:00 snap
+   5112 ?        00:00:01 kworker/u16:3-i915
+   5148 ?        00:00:00 kworker/4:2-cgroup_destroy
+   5237 ?        00:00:06 kworker/6:0-events
+   5401 ?        00:00:00 kworker/6:1-inet_frag_wq
+   5405 ?        00:00:00 kworker/3:1-events
+   5510 ?        00:00:00 kworker/5:1-inet_frag_wq
+   5592 ?        00:00:15 gnome-terminal-
+   5610 pts/0    00:00:00 bash
+   5620 ?        00:00:00 kworker/2:0-events
+   5652 ?        00:00:22 evince
+   5659 ?        00:00:00 evinced
+   5673 ?        00:00:04 evince
+   5691 ?        00:01:33 gedit
+   5753 ?        00:00:00 kworker/u16:2-events_unbound
+   6361 ?        00:00:00 kworker/1:0-events
+   6430 ?        00:00:00 kworker/u16:0-events_unbound
+   6436 ?        00:00:00 kworker/0:2-events
+   6437 ?        00:00:00 kworker/7:2-mm_percpu_wq
+   6529 ?        00:00:00 kworker/u16:1-events_power_efficient
+   6650 ?        00:00:00 kworker/7:1-events
+   6651 ?        00:00:00 kworker/5:0-events
+   6652 ?        00:00:00 kworker/4:0-inet_frag_wq
+   6725 ?        00:00:00 kworker/1:2-events
+   6726 ?        00:00:00 kworker/6:2-events
+   6727 ?        00:00:00 kworker/5:2-events
+   6728 ?        00:00:00 kworker/0:0-events
+   6733 ?        00:00:00 kworker/u16:4-flush-8:0
+   6803 ?        00:00:00 oosplash
+   6819 ?        00:00:02 soffice.bin
+   6854 ?        00:00:00 kworker/7:0-cgroup_destroy
+   6855 ?        00:00:00 kworker/7:3
+   6856 ?        00:00:00 kworker/4:1-mm_percpu_wq
+   6857 pts/0    00:00:00 ps
+   
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ kill -9 6819
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/abhishek-Lenovo-IdeaPad-L340-15IWL:@/tmp/.ICE-unix/1883,unix/abhishek-Lenovo-IdeaPad-L340-15IWL:/tmp/.ICE-unix/1883
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+PWD=/home/abhishek/one
+LOGNAME=abhishek
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=wayland
+SYSTEMD_EXEC_PID=1922
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.IXIAW1
+HOME=/home/abhishek
+USERNAME=abhishek
+IM_CONFIG_PHASE=1
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+VTE_VERSION=6800
+WAYLAND_DISPLAY=wayland-0
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/592aaa3a_3afc_423c_862b_5fff335c780c
+GNOME_SETUP_DISPLAY=:1
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=abhishek
+GNOME_TERMINAL_SERVICE=:1.168
+DISPLAY=:0
+SHLVL=1
+QT_IM_MODULE=ibus
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+GDMSESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+_=/usr/bin/env
+OLDPWD=/home/abhishek
+
+
+
+
+
+
+
+

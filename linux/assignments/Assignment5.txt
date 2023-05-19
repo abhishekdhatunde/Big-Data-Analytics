@@ -1,0 +1,288 @@
+👉️
+Q1.1. Write a shell script to display your LOGIN NAME and HOME directory.
+
+#!/bin/bash
+  2 
+  3 echo -n " LOGIN NAME :"
+  4 whoami
+  5 
+  6 echo -n " HOME DIRECTORY :"
+  7 cd ~
+  8 pwd
+
+
+👉️
+Q2.2. Write a shell script to display menu like “1. Date, 2. Cal, 3. Ls, 4. Pwd, 5. Exit” and execute the commands depending on user choice.
+
+
+ 10 echo "WELCOME"
+ 11 echo "1. Date"
+ 12 echo "2. Cal"
+ 13 echo "3. Ls"
+ 14 echo "4. Pwd"
+ 15 echo "5. Exit"
+ 16 
+ 17 echo "PLEASE ENTER YOUR CHOICE"
+ 18 read m
+ 19 
+ 20 case $m in
+ 21 1)
+ 22   echo " Date :"
+ 23   date
+ 24   ;;
+ 25 2)
+ 26   echo "Calender :"
+ 27   cal
+ 28   ;;
+ 29 3)
+ 30   echo "Ls :"
+ 31   ls
+ 32   ;;
+ 33 4)
+ 34   echo "PWD :"
+ 35   pwd
+ 36   ;;
+ 37 5)
+ 38   echo "THANK YOU"
+ 39 esac
+
+
+👉️
+Q3.3. Write a shell script to accept the name from the user and check whether user entered name is file or directory. If name is file display its size and if it is directory display its contents.
+  1 #!/bin/bash
+  2 
+  3 echo "PLEASE ENTER NAME :"
+  4 read m
+  5 
+  6 if [ -d "$m" ] ;
+  7 then
+  8     echo "$m is a directory";
+  9     echo "CONTENTS ARE ::"
+ 10     cd $m
+ 11     ls
+ 12 else
+ 13     if [ -f "$m" ];
+ 14     then
+ 15         echo "$m is a file";
+ 16         echo "SIZE IS ::"
+ 17         echo `du -h $m`
+ 18     else
+ 19         echo "$m is not valid";
+ 20         exit 1
+ 21     fi
+ 22 fi
+
+
+
+👉️
+Q4.Write a shell script to determine whether a given number is prime or not
+
+  1 #!/bin/bash
+  2 
+  3 echo -e "Enter Number : "
+  4 read n
+  5 
+  6 for((i=2; i<=$n/2; i++))
+  7 do
+  8 # if [ $n%i -eq 0]
+  9  ans=$(( n%i ))
+ 10  if [ $ans -eq 0 ]
+ 11   then
+ 12     echo "$n is not a prime number."
+ 13     exit 0
+ 14  fi
+ 15 done
+ 16 #else
+ 17     echo "$n is a prime number."
+ 18 #fi
+ 19 #done
+
+
+👉️
+Q6.6. Write a Program to find whether a given year is a leap year or not
+
+ echo -n "Enter year : "
+read y
+
+if [ `expr $y % 4` -eq 0 -a `expr $y % 100` -ne 0 -o `expr $y % 400` -eq 0 ]
+then
+	echo "$y year is leap year"
+else
+	echo "$y year is not leap year"
+fi
+
+👉️
+Q7. Write a Program to find whether a given number is positive or negative
+  1 #!/bin/bash
+  2 
+  3 echo "PLEASE ENTER NUMBER :: "
+  4 read n
+  5 
+  6 if [ $n -gt 0 ]
+  7 then
+  8   echo " $n is positive number "
+  9 else
+ 10   echo " $n is negative number "
+ 11 fi
+ 
+ 👉️
+ Q8. Write a program to print the table of a given number.
+   1 #!/bin/bash
+  2 
+  3 echo "PLEASE ENTER NUMBER ::"
+  4 read n
+  5 
+  6 i=1
+  7 while [ $i -le 10 ]
+  8 do
+  9   res=`expr $n \* $i`
+ 10   echo "$n * $i = $res"
+ 11   i=`expr $i + 1`
+ 12 done
+~          
+
+👉️
+Q9. Write a program to find the factorial of given number.
+  1 #!/bin/bash
+  2 
+  3 echo "PLEASE ENTER NUMBER :: "
+  4 read num
+  5 
+  6 fact=1
+  7 for (( i=2;i<=$num;i++ ))
+  8 do
+  9   fact=`expr $fact  \* $i`
+ 10 done
+ 11 
+ 12 echo "Factorial :: $fact"
+~                              
+
+👉️
+Q10. Write a program to find given number of terms in the Fibonacci series.
+
+  1 #!/bin/bash
+  2 echo "Enter the value of n"
+  3 read n
+  4 a=0
+  5 b=1
+  6 count=2
+  7 
+  8 while [ $count -le $n ]
+  9 do
+ 10 fib=`expr $a + $b`
+ 11 a=$b
+ 12 b=$fib
+ 13 echo $fib
+ 14 count=`expr $count + 1`
+ 15 done
+~         
+
+👉️
+Q11.Write a program to calculate gross salary if the DA is 40%, HRA is 20% of basic salary.
+Accept basic salary form user and display gross salary (Result can be floating point
+value).
+
+ 2 #!/bin/bash
+  3 
+  4 echo "ENTER SALARY ::"
+  5 read sal
+  6 
+  7 grosal=$( echo "$sal+((40/100)*$sal)+((20/100)*$sal)" | bc -l)
+  8 echo "GROSS SALARY :: $grosal"
+
+
+👉️
+Q12. Write a shell script to accept a filename as argument and displays the last modification
+time if the file exists and a suitable message if it doesn’t exist.
+  1 echo -n "Enter name of the file:"
+  2 read filename
+  3 
+  4 if [ -f $filename ]
+  5 then
+  6     echo 'Last modification time is '`ls -lt $filename | tr -s " " "," | cut
+  7 else
+  8   echo "File not exist"
+  9 fi
+~         
+
+👉️
+Q13.Write a shell script to display only hidden file of current directory.
+  1 echo -n "ENTER DIRECTORY NAME"
+  2 read m
+  3 
+  4 if [ -d "$m" ] ;
+  5 then
+  6 echo "CONTENTS ARE ::"
+  7 cd $m
+  8 ls -a | grep -e "^\."
+  9 
+ 10 else
+ 11   echo "File not exist"
+ 12 fi
+~       
+
+👉️
+Q14.Write a shell script to display only executable files of current directory.
+  1 #!/bin/bash
+  2 
+  3 echo "ALL EXECUTABLE FILES"
+  4 
+  5 for fl in `ls`
+  6 do
+  7 if [ -x $fl ]
+  8 then
+  9   echo "EX files :: $fl"
+ 10 fi
+ 11 done
+ 12 
+
+👉️
+Q15.Accept the two file names from user and append the contents in reverse case of first file
+into second file.
+  1 #!/bin/bash
+  2 
+  3 echo -n "ENTER FILENAME TO BE WHOSE CONTENT TO BE APPENDED"
+  4 read file1
+  5 
+  6 echo -n "ENTER FILENAME CONTENT TO BE APPENDED"
+  7 read file2
+  8 
+  9 cat $file1 | tr "a-z|A-Z" "A-Z|a-z" | >> $file2
+
+
+
+
+
+
+👉️
+Q17. Print the following pattern.
+*
+* *
+* * *
+* * * *
+* * * * *
+  1 #!/bin/bash
+  2 
+  3 echo "ENTER NUMBER :: "
+  4 read num
+  5 
+  6 for((i=1;i<=num;i++))
+  7 do
+  8   for((j=1;j<=$i;j++))
+  9   do
+ 10   echo -n "* "
+ 11   done
+ 12   echo
+ 13 done
+
+
+
+
+
+
+
+
+
+
+
+

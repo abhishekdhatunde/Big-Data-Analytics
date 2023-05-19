@@ -1,0 +1,75 @@
+👉️
+Q1.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ wc < data.txt
+  6  25 145
+
+
+👉️
+Q2.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+👉️
+Q3.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ grep -w "file" data.txt
+In Linux everything is file
+
+
+👉️
+Q4.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ grep -v "files" data.txt
+Linux is open source.
+In Linux everything is file
+
+👉️
+Q5.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+👉️
+Q6.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ grep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+👉️
+Q7.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ grep "\.$" data.txt
+Linux is open source.
+files have permissions.
+files have inode no.
+files have size.
+
+👉️
+Q8.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ head -2 data.txt
+Linux is open source.
+In Linux everything is file
+
+👉️
+Q9.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ tail -3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+
+👉️
+Q10.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/Documents$ tail -n +3 data.txt | head -3
+files have permissions.
+files have inode no.
+files have size.
+
+
+
+
+
+
+
+

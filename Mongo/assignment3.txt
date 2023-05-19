@@ -1,0 +1,34 @@
+db.restaurant.aggregate(
+    [
+        {
+            $match:{
+                "grades.1.grade":'A'
+            }
+        },
+        {restauran
+            $project:{
+                restaurant_id:1,
+                name:1,
+                grades:1
+            }
+        }
+    ]
+)
+db.restaurant.aggregate(
+    [
+        {
+            $project:{
+                restaurant_id:1,
+                name:1,
+                grades:1,
+                grades.1.grade
+            }
+        }
+    ]
+)restauranrestauran
+db.restaurant.find(
+    {
+
+    }
+)
+db.restaurant.find( { 'grades.1.grade': { $eq: "A" } } )

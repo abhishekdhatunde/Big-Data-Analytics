@@ -1,0 +1,159 @@
+👉️Q1.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+44.txt   Documents  Music     one       Public  Templates
+Desktop  Downloads  name.txt  Pictures  snap    Videos
+
+👉️Q2.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ mv 44.txt 44.html
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+44.html  Documents  Music     one       Public  Templates
+Desktop  Downloads  name.txt  Pictures  snap    Videos
+
+👉️Q3.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ln -s name.txt name1.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -li
+total 48
+4852873 -rw-rw-r-- 1 abhishek abhishek    8 Dec  6 14:42 44.html
+4983149 drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Desktop
+4983154 drwxr-xr-x 2 abhishek abhishek 4096 Dec  6 16:16 Documents
+4983151 drwxr-xr-x 3 abhishek abhishek 4096 Dec  5 15:18 Downloads
+4983155 drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Music
+4852848 lrwxrwxrwx 1 abhishek abhishek    8 Dec  6 16:57 name1.txt -> name.txt
+4852872 -rw-rw-r-- 1 abhishek abhishek   29 Dec  6 15:33 name.txt
+4983247 drwxrwxr-x 3 abhishek abhishek 4096 Dec  6 15:45 one
+4983156 drwxr-xr-x 3 abhishek abhishek 4096 Dec  6 09:47 Pictures
+4983153 drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Public
+5373999 drwx------ 4 abhishek abhishek 4096 Dec  5 19:57 snap
+4983152 drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Templates
+4983157 drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Videos
+
+👉️Q4.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ln name1.txt name2.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -l
+total 48
+-rw-rw-r-- 1 abhishek abhishek    8 Dec  6 14:42 44.html
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Desktop
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  6 16:16 Documents
+drwxr-xr-x 3 abhishek abhishek 4096 Dec  5 15:18 Downloads
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Music
+lrwxrwxrwx 2 abhishek abhishek    8 Dec  6 16:57 name1.txt -> name.txt
+lrwxrwxrwx 2 abhishek abhishek    8 Dec  6 16:57 name2.txt -> name.txt
+-rw-rw-r-- 1 abhishek abhishek   29 Dec  6 15:33 name.txt
+drwxrwxr-x 3 abhishek abhishek 4096 Dec  6 15:45 one
+drwxr-xr-x 3 abhishek abhishek 4096 Dec  6 09:47 Pictures
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Public
+drwx------ 4 abhishek abhishek 4096 Dec  5 19:57 snap
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Templates
+drwxr-xr-x 2 abhishek abhishek 4096 Dec  1 04:17 Videos
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ 
+
+👉️Q5.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ stat name.txt
+  File: name.txt
+  Size: 29        	Blocks: 8          IO Block: 4096   regular file
+Device: 807h/2055d	Inode: 4852872     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/abhishek)   Gid: ( 1000/abhishek)
+Access: 2022-12-06 15:33:58.100872908 +0530
+Modify: 2022-12-06 15:33:27.972480826 +0530
+Change: 2022-12-06 15:33:27.972480826 +0530
+ Birth: 2022-12-06 14:30:16.370780316 +0530
+
+👉️Q6.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls
+Desktop    Downloads  name.txt  Public  Templates
+Documents  Music      Pictures  snap    Videos
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -l name.txt
+-rw-rw-r-- 1 abhishek abhishek 17 Dec  6 14:30 name.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ touch -m name.txt
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ ls -l name.txt
+-rw-rw-r-- 1 abhishek abhishek 17 Dec  6 14:36 name.txt
+
+👉️Q7.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ touch name.txt
+
+👉️Q8.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ tail 1.txt
+2
+5
+8
+9
+6
+47
+556
+5
+8
+9
+
+👉️Q12.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ whoami
+abhishek
+
+👉️Q13.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ tty
+/dev/pts/0
+
+👉️Q14.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ who am i
+
+👉️Q15.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ users
+abhishek
+
+👉️Q16.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ who
+abhishek tty2         2022-12-06 14:20 (tty2)
+
+👉️Q18.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ chmod +r name.txt
+
+👉️Q19.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ chmod +x name.txt
+
+👉️Q20.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~$ wc < name.txt
+ 0  4 29
+
+👉️Q22.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ head -2 1.txt | tail -3
+2
+5
+
+👉️Q23.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ sort 1.txt | uniq
+2
+47
+5
+556
+6
+8
+9
+
+👉️Q25.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ls
+111.txt  11.txt  1.txt  alpha.txt  beta.txt  two
+
+👉️Q28.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ echo "Hello PG-DBDA" | tr "a-z" "A-Z"
+HELLO PG-DBDA
+
+👉️Q29.
+abhishek@abhishek-Lenovo-IdeaPad-L340-15IWL:~/one$ ls -l |tr  -s " " | cut -d " " -f1,9
+total
+-rw-rw-r-- 111.txt
+-rw-rw-r-- 11.txt
+-rw-rw-r-- 1.txt
+-rw-rw-r-- alpha.txt
+-rw-rw-r-- beta.txt
+drwxrwxr-x two
+
+
+
+
+
+
+
+
+
+
+
+
